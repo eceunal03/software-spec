@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="model_single_SnapShot_1760612417290"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="131.155.208.103"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <intAttribute key="fpIndex" value="59"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <stringAttribute key="modelBehaviorInit" value=""/>
+    <stringAttribute key="modelBehaviorNext" value=""/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <stringAttribute key="modelBehaviorVars" value="requests, pc, shipLocation, permissions, req, valvesOpen, waterLevel, perm, shipStatus, lockCommand, lockOrientation, doorsOpen"/>
+    <stringAttribute key="modelComments" value="Single lock and single ship model.&#13;&#10;Deadlock check disabled,verifying basic safety invariants only."/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1MessagesOK"/>
+        <listEntry value="1DoorsMutex"/>
+        <listEntry value="1DoorsOpenValvesClosed"/>
+        <listEntry value="1DoorsOpenWaterlevelRight"/>
+        <listEntry value="1TypeOK"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties">
+        <listEntry value="0RequestLockFulfilled"/>
+        <listEntry value="0WaterlevelChange"/>
+        <listEntry value="0RequestsShips"/>
+        <listEntry value="0ShipsReachGoals"/>
+    </listAttribute>
+    <intAttribute key="modelEditorOpenTabs" value="8"/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="defaultInitValue;;0;0;0"/>
+        <listEntry value="MaxShipsLocation;;2;0;0"/>
+        <listEntry value="NumShips;;1;0;0"/>
+        <listEntry value="NumLocks;;1;0;0"/>
+        <listEntry value="MaxShipsLock;;1;0;0"/>
+    </listAttribute>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="10"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <stringAttribute key="specName" value="lock_system_1"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+</launchConfiguration>
